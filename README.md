@@ -6,7 +6,7 @@ Desafio SPA Universe 👨‍🚀
 
 ### Sobre
 
-<p>Clique aqui para vizualizar o projeto <a href="https://franciellirodrigues.github.io/FOCUSTIMER-POMODORO/">link</a><p>
+<p>Clique aqui para vizualizar o projeto <a href="https://bit.ly/3QdBetE" target="_blank">link</a><p>
 
 
 ## O que Foi abordado nesse desafio:
