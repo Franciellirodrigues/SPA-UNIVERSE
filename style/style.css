@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text-color: #e1e1e6;
+  
+    --text-color-link-nav-1: hsl(0, 0%, 100%);
+    --text-color-link-nav-2: #c4c4cc;
+  
+    --bg-button: hsl(0, 0%, 100%);
+  
+    --color-border-button: hsl(0, 0%, 100%);
+    --text-color-button: hsl(0, 0%, 100%);
+    --text2-color-button: hsl(194, 97%, 31%);
+  
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body a {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--text-color-link-nav-2);
+  }
+  
+  body a:hover {
+    color: var(--text-color-link-nav-1);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    position: fixed;
+    top: 4rem;
+    left: 7.2rem;
+  }
+  
+  /* Geral */
+  
+  body a.linkHome.hide,
+  body a.linkUniverse.hide,
+  body a.linkExplore.hide {
+    color: var(--text-color-link-nav-1);
+  }
+  
+  body.home h1,
+  body.universe h1,
+  body.explore h1 {
+    font-weight: 700;
+    font-size: 4.8rem;
+  
+    color: var(--text-color);
+  }
+  
+  body.home p,
+  body.universe p,
+  body.explore p {
+    width: 64.8rem;
+    height: 20.3rem;
+  
+    font-size: 1.8rem;
+    line-height: 160%;
+  
+    color: var(--text-color);
+  }
+  
+  #app .page {
+    margin: 18.5rem 0 0 10.2rem;
+  }
+  
+  #app .pageHome {
+    width: 100vw;
+    height: 100vh;
+  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a.icon {
+    animation: rotateIcon 1100ms 500ms backwards;
+  }
+  
+  /* home */
+  body.home {
+    background: url(../img/mountains-universe-1\ 1.png) no-repeat;
+    background-size: cover;
+  }
+  
+  #app .conteudoHome {
+    display: grid;
+    justify-items: center;
+  }
+  
+  #app .conteudoHome button {
+    width: 19.5rem;
+    height: 4.8rem;
+    background: transparent;
+  
+    font-weight: 700;
+    font-size: 1.4rem;
+  
+    color: var(--text-color-button);
+  
+    border: 2px solid var(--color-border-button);
+    border-radius: 5px;
+  
+    margin-top: 2.4rem;
+  
+    cursor: pointer;
+  }
+  
+  #app .conteudoHome button:hover {
+    color: var(--text2-color-button);
+    background: var(--color-border-button);
+  
+    border: 2px solid var(--bg-button);
+    border-radius: 5px;
+  
+    margin-top: 2.4rem;
+  
+    cursor: pointer;
+  }
+  
+  /* universe */
+  body.universe {
+    background: url(../img/mountains-universe-2.png) no-repeat;
+    background-size: cover;
+  }
+  
+  /* explore */
+  body.explore {
+    background: url(../img/mountains-universe-3.png) no-repeat;
+    background-size: cover;
+  }
+  
+  @keyframes rotateIcon {
+    0% {
+      opacity: 0;
+      transform: rotate(0);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+  }
